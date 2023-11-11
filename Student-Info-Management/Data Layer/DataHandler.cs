@@ -5,14 +5,78 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Data.SqlClient;
 using Student_Information_Management.Data_Access_Layer;
 using Student_Information_Management.Business_Logic_Layer;
 using Student_Information_Management.Presentation_Layer;
+using System.Collections;
+using System.Data;
 
 namespace Student_Information_Management.Data_Layer
 {
     internal class DataHandler
     {
+        string query;
+        SqlConnection connection = new SqlConnection(conn);
+        SqlDataAdapter adapter;
+        SqlCommand cmd;
+        DataTable table;
+
+        //connection string to sql server
+        static string conn = "Server= np:\\\\.\\pipe\\LOCALDB#11554CD3\\tsql\\query; Initial Catalog= StudentManager; Integrated Security=SSPI";
+        //insert students
+        public void AddStudent(StudentData student)
+        {
+
+                
+                 query = $"INSERT INTO students " +
+                               $"VALUES ('{student.StudNumber}', '{student.Firstname}', '{student.Surname}', '{student.StudImage}', " +
+                               $"'{student.DateOfBirth}', '{student.Gender}', '{student.Phone}', '{student.StuAddress}','{student.ModuleCode}')";
+
+                try
+                {
+                    using (connection)
+                    {
+                        using (cmd = new SqlCommand(query, connection))
+                        {
+                            connection.Open();
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+                }
+                catch (Exception e)
+                {
+                    System.Windows.Forms.MessageBox.Show(e.Message);
+                }
+
+            }
+        
+   public void AddModule( ModuleData moduleData)
+        {
+
+            query = $"INSERT INTO modules  " +
+                          $"VALUES ('{moduleData.Modulecode}','{moduleData.ModuleName}', '{moduleData.MdouleDescription}','{moduleData.Links}')";
+
+            try
+            {
+                using (connection)
+                {
+                    using (cmd = new SqlCommand(query, connection))
+                    {
+                        connection.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message);
+            }
+
+        }
+    
+
+
         static string path = "SampleLogins.txt";
         public bool ValidateUserLogin(string username, string password)
         {
@@ -73,5 +137,8 @@ namespace Student_Information_Management.Data_Layer
 
             return false; // Username does not exist
         }
+
+     
+
     }
 }
