@@ -8,5 +8,6 @@ namespace Student_Information_Management.Data_Layer
 {
     internal class StudentData
     {
+        string gender;
     }
 }
