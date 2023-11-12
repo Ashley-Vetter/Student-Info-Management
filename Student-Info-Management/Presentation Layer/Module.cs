@@ -42,7 +42,7 @@ namespace Student_Information_Management.Presentation_Layer
 
         private void Module_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

@@ -46,6 +46,7 @@
             groupBox1 = new GroupBox();
             button6 = new Button();
             groupBox2 = new GroupBox();
+            button7 = new Button();
             txtModulecode = new TextBox();
             label11 = new Label();
             txtPhone = new TextBox();
@@ -61,6 +62,7 @@
             dataGridView1 = new DataGridView();
             richTextBox1 = new RichTextBox();
             pictureBox1 = new PictureBox();
+            button8 = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -239,6 +241,7 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(button7);
             groupBox2.Controls.Add(txtModulecode);
             groupBox2.Controls.Add(label11);
             groupBox2.Controls.Add(txtPhone);
@@ -270,6 +273,16 @@
             groupBox2.Text = "Student Info ";
             groupBox2.Enter += groupBox2_Enter;
             // 
+            // button7
+            // 
+            button7.Location = new Point(311, 152);
+            button7.Name = "button7";
+            button7.Size = new Size(104, 23);
+            button7.TabIndex = 22;
+            button7.Text = "Module Form";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
             // txtModulecode
             // 
             txtModulecode.Location = new Point(144, 257);
@@ -280,7 +293,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(13, 257);
+            label11.Location = new Point(9, 257);
             label11.Name = "label11";
             label11.Size = new Size(79, 15);
             label11.TabIndex = 25;
@@ -296,7 +309,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(11, 197);
+            label10.Location = new Point(9, 197);
             label10.Name = "label10";
             label10.Size = new Size(41, 15);
             label10.TabIndex = 23;
@@ -312,7 +325,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(3, 143);
+            label9.Location = new Point(3, 140);
             label9.Name = "label9";
             label9.Size = new Size(75, 15);
             label9.TabIndex = 21;
@@ -398,11 +411,22 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // button8
+            // 
+            button8.Location = new Point(756, 12);
+            button8.Name = "button8";
+            button8.Size = new Size(75, 23);
+            button8.TabIndex = 22;
+            button8.Text = "Exit";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
             // StudentModuleInfoForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(677, 447);
+            ClientSize = new Size(852, 447);
+            Controls.Add(button8);
             Controls.Add(pictureBox1);
             Controls.Add(richTextBox1);
             Controls.Add(dataGridView1);
@@ -455,5 +479,7 @@
         private Label label10;
         private Label label6;
         private TextBox txtStreetaddress;
+        private Button button7;
+        private Button button8;
     }
 }

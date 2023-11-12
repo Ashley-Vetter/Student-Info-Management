@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Student_Information_Management.Data_Layer;
+using Student_Information_Management.Presentation_Layer;
 
 namespace Student_Information_Management
 {
@@ -16,6 +17,7 @@ namespace Student_Information_Management
     {
         StudentData studentData;
         DataHandler handler;
+
         public StudentModuleInfoForm()
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace Student_Information_Management
         private void button3_Click(object sender, EventArgs e)
         {
             studentData = new StudentData(int.Parse(txtStudNum.Text), txtFirstName.Text, txtSurname.Text,
-            txtImage.Text,txtDOB.Text,txtGender.Text,txtPhone.Text,txtStreetaddress.Text,int.Parse(txtModulecode.Text));
+            txtImage.Text, txtDOB.Text, txtGender.Text, txtPhone.Text, txtStreetaddress.Text, int.Parse(txtModulecode.Text));
             handler.AddStudent(studentData);
             MessageBox.Show("Student Succesfully added");
         }
@@ -43,6 +45,18 @@ namespace Student_Information_Management
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+        // link to module form
+        private void button7_Click(object sender, EventArgs e)
+        {
+            ActiveForm.Hide();
+            Module form = new Module();
+            form.Show();
         }
     }
 }
