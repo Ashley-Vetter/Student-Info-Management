@@ -8,12 +8,17 @@ using System.IO;
 using Student_Information_Management.Data_Access_Layer;
 using Student_Information_Management.Business_Logic_Layer;
 using Student_Information_Management.Presentation_Layer;
+using System.Collections;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace Student_Information_Management.Data_Layer
 {
     internal class DataHandler
     {
         static string path = "SampleLogins.txt";
+        static string conn = "Server = (local); Initial Catalog = StudentManager; Integrated Security = SSPI";
+        SqlConnection
         public bool ValidateUserLogin(string username, string password)
         {
             // Read user credentials from the file
@@ -72,6 +77,86 @@ namespace Student_Information_Management.Data_Layer
             }
 
             return false; // Username does not exist
+        }
+
+        public void deleteStudent(int studentNumber)//method that is used by a button that deletes a student entry
+        {
+            query = $"DELETE FROM students WHERE studentNumber = '{studentNumber}'";
+            try
+            {
+                using (connection)
+                {
+                    using (cmd = new SqlCommand(query, connection))
+                    {
+                        connection.Open();
+                        cmd.ExecuteNonQuery();
+                        System.Windows.Forms.MessageBox.Show("Student deleted!");
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+
+                System.Windows.Forms.MessageBox.Show(e.Message);
+            }
+        }
+
+        public DataTable displayStudent()//when the display form loads, the datagrid view that holds the student information will display all student information
+        {
+            query = "SELECT * FROM students";
+            sa = new SqlDataAdapter(query, conn);
+            dt = new DataTable();
+            sa.Fill(dt);
+            return dt;
+        }
+
+        public void deleteModule(int moduleCode)//method that is used by a button that deletes a module entry
+        {
+            query = $"DELETE FROM students WHERE moduleCode = '{moduleCode}'";
+            try
+            {
+                using (connection)
+                {
+                    using (cmd = new SqlCommand(query, connection))
+                    {
+                        connection.Open();
+                        cmd.ExecuteNonQuery();
+                        System.Windows.Forms.MessageBox.Show("Module deleted!");
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+
+                System.Windows.Forms.MessageBox.Show(e.Message);
+            }
+        }
+
+        public DataTable displayModule()//when the display form loads, the datagrid view that holds the module information will display all module information
+        {
+            query = "SELECT * FROM modules";
+            sa = new SqlDataAdapter(query, conn);
+            dt = new DataTable();
+            sa.Fill(dt);
+            return dt;
+        }
+
+        public DataTable searchStudent(int studentNumber)
+        {
+            query = $"SELECT * FROM students WHERE studentNumber = '{studentNumber}'";
+            sa = new SqlDataAdapter(query, conn);
+            dt = new DataTable();
+            sa.Fill(dt);
+            return dt;
+        }
+
+        public DataTable searchModule(int moduleCode)
+        {
+            query = $"SELECT * FROM modules WHERE moduleCode = '{moduleCode}'";
+            sa = new SqlDataAdapter(query, conn);
+            dt = new DataTable();
+            sa.Fill(dt);
+            return dt;
         }
     }
 }
