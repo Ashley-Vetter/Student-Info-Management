@@ -137,18 +137,17 @@ namespace Student_Information_Management.Data_Layer
 
             return false; // Username does not exist
         }
+   public DataTable SearchStudent(int studNumber, int moduleCode)
+    {
+     query = $"SELECT * FROM modules WHERE ModuleCode AND StudentNumber = '{moduleCode}', {studNumber} ";
+     adapter = new SqlDataAdapter(query, conn);
+     table = new DataTable();
+     adapter.Fill(table);
+     MessageBox.Show("Search button clicked!");
+     return table;
+     //Call this method in the StudentModuleInfo form to search for student using module code and student number 
 
-          public DataTable SearchModule(StudentData student)
-  {
-      query = $"SELECT * FROM modules WHERE ModuleCode = '{student.ModuleCode}' ";
-      adapter = new SqlDataAdapter(query, conn);
-      table = new DataTable();
-      adapter.Fill(table);
-      MessageBox.Show("Search button clicked!");
-      return table;
-      //Call this method in the StudentModuleInfo form to search for student using module code
-
-  }
+    }
      
 
     }
