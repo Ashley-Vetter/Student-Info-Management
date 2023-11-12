@@ -24,19 +24,26 @@ namespace Student_Information_Management
         private void button3_Click(object sender, EventArgs e)
         {
             studentData = new StudentData(int.Parse(txtStudNum.Text), txtFirstName.Text, txtSurname.Text,
-                txtImage.Text, tx)
+            txtImage.Text,txtDOB.Text,txtGender.Text,txtPhone.Text,txtStreetaddress.Text,int.Parse(txtModulecode.Text));
+            handler.AddStudent(studentData);
+            MessageBox.Show("Student Succesfully added");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
-        
+
 
         private void label7_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
-}
+

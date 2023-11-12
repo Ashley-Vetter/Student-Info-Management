@@ -46,21 +46,21 @@
             groupBox1 = new GroupBox();
             button6 = new Button();
             groupBox2 = new GroupBox();
+            txtModulecode = new TextBox();
+            label11 = new Label();
+            txtPhone = new TextBox();
+            label10 = new Label();
+            txtDOB = new TextBox();
+            label9 = new Label();
+            txtGender = new TextBox();
+            label8 = new Label();
             txtImage = new TextBox();
             label7 = new Label();
+            label6 = new Label();
+            txtStreetaddress = new TextBox();
             dataGridView1 = new DataGridView();
             richTextBox1 = new RichTextBox();
             pictureBox1 = new PictureBox();
-            label8 = new Label();
-            textBox2 = new TextBox();
-            label9 = new Label();
-            textBox3 = new TextBox();
-            label10 = new Label();
-            textBox4 = new TextBox();
-            txtCourse = new TextBox();
-            label6 = new Label();
-            label11 = new Label();
-            textBox6 = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -239,13 +239,13 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(textBox6);
+            groupBox2.Controls.Add(txtModulecode);
             groupBox2.Controls.Add(label11);
-            groupBox2.Controls.Add(textBox4);
+            groupBox2.Controls.Add(txtPhone);
             groupBox2.Controls.Add(label10);
-            groupBox2.Controls.Add(textBox3);
+            groupBox2.Controls.Add(txtDOB);
             groupBox2.Controls.Add(label9);
-            groupBox2.Controls.Add(textBox2);
+            groupBox2.Controls.Add(txtGender);
             groupBox2.Controls.Add(label8);
             groupBox2.Controls.Add(txtImage);
             groupBox2.Controls.Add(label7);
@@ -256,7 +256,7 @@
             groupBox2.Controls.Add(button4);
             groupBox2.Controls.Add(label6);
             groupBox2.Controls.Add(button3);
-            groupBox2.Controls.Add(txtCourse);
+            groupBox2.Controls.Add(txtStreetaddress);
             groupBox2.Controls.Add(txtStudNum);
             groupBox2.Controls.Add(txtSurname);
             groupBox2.Controls.Add(txtFirstName);
@@ -268,6 +268,71 @@
             groupBox2.TabIndex = 18;
             groupBox2.TabStop = false;
             groupBox2.Text = "Student Info ";
+            groupBox2.Enter += groupBox2_Enter;
+            // 
+            // txtModulecode
+            // 
+            txtModulecode.Location = new Point(144, 257);
+            txtModulecode.Name = "txtModulecode";
+            txtModulecode.Size = new Size(148, 23);
+            txtModulecode.TabIndex = 26;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(13, 257);
+            label11.Name = "label11";
+            label11.Size = new Size(79, 15);
+            label11.TabIndex = 25;
+            label11.Text = "Module Code";
+            // 
+            // txtPhone
+            // 
+            txtPhone.Location = new Point(144, 194);
+            txtPhone.Name = "txtPhone";
+            txtPhone.Size = new Size(148, 23);
+            txtPhone.TabIndex = 24;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(11, 197);
+            label10.Name = "label10";
+            label10.Size = new Size(41, 15);
+            label10.TabIndex = 23;
+            label10.Text = "Phone";
+            // 
+            // txtDOB
+            // 
+            txtDOB.Location = new Point(144, 140);
+            txtDOB.Name = "txtDOB";
+            txtDOB.Size = new Size(148, 23);
+            txtDOB.TabIndex = 22;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(3, 143);
+            label9.Name = "label9";
+            label9.Size = new Size(75, 15);
+            label9.TabIndex = 21;
+            label9.Text = "Date Of Birth";
+            // 
+            // txtGender
+            // 
+            txtGender.Location = new Point(144, 166);
+            txtGender.Name = "txtGender";
+            txtGender.Size = new Size(148, 23);
+            txtGender.TabIndex = 20;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(5, 169);
+            label8.Name = "label8";
+            label8.Size = new Size(45, 15);
+            label8.TabIndex = 19;
+            label8.Text = "Gender";
             // 
             // txtImage
             // 
@@ -285,6 +350,24 @@
             label7.TabIndex = 17;
             label7.Text = "Image Link";
             label7.Click += label7_Click;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(6, 226);
+            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(82, 15);
+            label6.TabIndex = 5;
+            label6.Text = "Street Address";
+            // 
+            // txtStreetaddress
+            // 
+            txtStreetaddress.Location = new Point(144, 226);
+            txtStreetaddress.Margin = new Padding(2, 1, 2, 1);
+            txtStreetaddress.Name = "txtStreetaddress";
+            txtStreetaddress.Size = new Size(148, 23);
+            txtStreetaddress.TabIndex = 7;
             // 
             // dataGridView1
             // 
@@ -315,93 +398,11 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(5, 169);
-            label8.Name = "label8";
-            label8.Size = new Size(45, 15);
-            label8.TabIndex = 19;
-            label8.Text = "Gender";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(144, 166);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(148, 23);
-            textBox2.TabIndex = 20;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(3, 143);
-            label9.Name = "label9";
-            label9.Size = new Size(75, 15);
-            label9.TabIndex = 21;
-            label9.Text = "Date Of Birth";
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(144, 140);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(148, 23);
-            textBox3.TabIndex = 22;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(11, 197);
-            label10.Name = "label10";
-            label10.Size = new Size(41, 15);
-            label10.TabIndex = 23;
-            label10.Text = "Phone";
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(144, 194);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(148, 23);
-            textBox4.TabIndex = 24;
-            // 
-            // txtCourse
-            // 
-            txtCourse.Location = new Point(144, 226);
-            txtCourse.Margin = new Padding(2, 1, 2, 1);
-            txtCourse.Name = "txtCourse";
-            txtCourse.Size = new Size(148, 23);
-            txtCourse.TabIndex = 7;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(6, 226);
-            label6.Margin = new Padding(2, 0, 2, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(82, 15);
-            label6.TabIndex = 5;
-            label6.Text = "Street Address";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(13, 257);
-            label11.Name = "label11";
-            label11.Size = new Size(79, 15);
-            label11.TabIndex = 25;
-            label11.Text = "Module Code";
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(144, 257);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(148, 23);
-            textBox6.TabIndex = 26;
-            // 
             // StudentModuleInfoForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(804, 447);
+            ClientSize = new Size(677, 447);
             Controls.Add(pictureBox1);
             Controls.Add(richTextBox1);
             Controls.Add(dataGridView1);
@@ -444,15 +445,15 @@
         private PictureBox pictureBox1;
         private TextBox txtImage;
         private Label label7;
-        private TextBox textBox3;
+        private TextBox txtDOB;
         private Label label9;
-        private TextBox textBox2;
+        private TextBox txtGender;
         private Label label8;
-        private TextBox textBox6;
+        private TextBox txtModulecode;
         private Label label11;
-        private TextBox textBox4;
+        private TextBox txtPhone;
         private Label label10;
         private Label label6;
-        private TextBox txtCourse;
+        private TextBox txtStreetaddress;
     }
 }
