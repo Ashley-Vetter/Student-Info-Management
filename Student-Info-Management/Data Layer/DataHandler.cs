@@ -18,7 +18,13 @@ namespace Student_Information_Management.Data_Layer
     {
         static string path = "SampleLogins.txt";
         static string conn = "Server = (local); Initial Catalog = StudentManager; Integrated Security = SSPI";
-        SqlConnection
+        SqlConnection connection = new SqlConnection(conn);
+
+        string query;
+        SqlCommand cmd;
+        SqlDataAdapter sa;
+        DataTable dt;
+
         public bool ValidateUserLogin(string username, string password)
         {
             // Read user credentials from the file
