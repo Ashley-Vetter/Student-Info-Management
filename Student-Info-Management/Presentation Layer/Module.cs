@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Student_Information_Management.Data_Layer;
-using Student_Information_Management.Data_Layer;
 namespace Student_Information_Management.Presentation_Layer
 {
     public partial class Module : Form

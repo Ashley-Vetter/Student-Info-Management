@@ -27,31 +27,29 @@ namespace Student_Information_Management.Data_Layer
         //insert students
         public void AddStudent(StudentData student)
         {
+            query = $"INSERT INTO students " +
+                            $"VALUES ('{student.StudNumber}', '{student.Firstname}', '{student.Surname}', '{student.StudImage}', " +
+                            $"'{student.DateOfBirth}', '{student.Gender}', '{student.Phone}', '{student.StuAddress}','{student.ModuleCode}')";
 
-                
-                 query = $"INSERT INTO students " +
-                               $"VALUES ('{student.StudNumber}', '{student.Firstname}', '{student.Surname}', '{student.StudImage}', " +
-                               $"'{student.DateOfBirth}', '{student.Gender}', '{student.Phone}', '{student.StuAddress}','{student.ModuleCode}')";
-
-                try
+            try
+            {
+                using (connection)
                 {
-                    using (connection)
+                    using (cmd = new SqlCommand(query, connection))
                     {
-                        using (cmd = new SqlCommand(query, connection))
-                        {
-                            connection.Open();
-                            cmd.ExecuteNonQuery();
-                        }
+                        connection.Open();
+                        cmd.ExecuteNonQuery();
                     }
                 }
-                catch (Exception e)
-                {
-                    System.Windows.Forms.MessageBox.Show(e.Message);
-                }
-
             }
+            catch (Exception e)
+            {
+                System.Windows.Forms.MessageBox.Show(e.Message);
+            }
+
+        }
         
-   public void AddModule( ModuleData moduleData)
+        public void AddModule( ModuleData moduleData)
         {
 
             query = $"INSERT INTO modules  " +
@@ -137,18 +135,16 @@ namespace Student_Information_Management.Data_Layer
 
             return false; // Username does not exist
         }
-   public DataTable SearchStudent(int studNumber, int moduleCode)
-    {
-     query = $"SELECT * FROM modules WHERE ModuleCode AND StudentNumber = '{moduleCode}', {studNumber} ";
-     adapter = new SqlDataAdapter(query, conn);
-     table = new DataTable();
-     adapter.Fill(table);
-     MessageBox.Show("Search button clicked!");
-     return table;
-     //Call this method in the StudentModuleInfo form to search for student using module code and student number 
+        public DataTable SearchStudent(int studNumber, int moduleCode)
+        {
+         query = $"SELECT * FROM modules WHERE ModuleCode AND StudentNumber = '{moduleCode}', {studNumber} ";
+         adapter = new SqlDataAdapter(query, conn);
+         table = new DataTable();
+         adapter.Fill(table);
+         MessageBox.Show("Search button clicked!");
+         return table;
+         //Call this method in the StudentModuleInfo form to search for student using module code and student number 
 
-    }
-     
-
+        }
     }
 }

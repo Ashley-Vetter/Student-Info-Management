@@ -470,19 +470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\Aevet\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Ashley-Vetter\\Student-Info-Management\\Student-Info-Management\\Student Information Management.csproj",
+      "projectUniqueName": "C:\\Users\\Aevet\\Documents\\GitHub\\Student-Info-Management\\Student-Info-Management\\Student Information Management.csproj",
       "projectName": "Student Information Management",
-      "projectPath": "C:\\Users\\User\\Source\\Repos\\Ashley-Vetter\\Student-Info-Management\\Student-Info-Management\\Student Information Management.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Source\\Repos\\Ashley-Vetter\\Student-Info-Management\\Student-Info-Management\\obj\\",
+      "projectPath": "C:\\Users\\Aevet\\Documents\\GitHub\\Student-Info-Management\\Student-Info-Management\\Student Information Management.csproj",
+      "packagesPath": "C:\\Users\\Aevet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aevet\\Documents\\GitHub\\Student-Info-Management\\Student-Info-Management\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aevet\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
