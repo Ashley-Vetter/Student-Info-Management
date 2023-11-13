@@ -34,13 +34,15 @@
             tbxDelMod = new TextBox();
             lblDelStuNum = new Label();
             lblDelModCode = new Label();
+            btnToMain = new Button();
             SuspendLayout();
             // 
             // btnDelStu
             // 
-            btnDelStu.Location = new Point(681, 118);
+            btnDelStu.Location = new Point(367, 55);
+            btnDelStu.Margin = new Padding(2, 1, 2, 1);
             btnDelStu.Name = "btnDelStu";
-            btnDelStu.Size = new Size(189, 46);
+            btnDelStu.Size = new Size(102, 22);
             btnDelStu.TabIndex = 0;
             btnDelStu.Text = "Delete Student";
             btnDelStu.UseVisualStyleBackColor = true;
@@ -48,56 +50,74 @@
             // 
             // btnDelMod
             // 
-            btnDelMod.Location = new Point(681, 221);
+            btnDelMod.Location = new Point(367, 104);
+            btnDelMod.Margin = new Padding(2, 1, 2, 1);
             btnDelMod.Name = "btnDelMod";
-            btnDelMod.Size = new Size(189, 46);
+            btnDelMod.Size = new Size(102, 22);
             btnDelMod.TabIndex = 1;
             btnDelMod.Text = "Delete Module";
             btnDelMod.UseVisualStyleBackColor = true;
+            btnDelMod.Click += btnDelMod_Click;
             // 
             // tbxDelStu
             // 
-            tbxDelStu.Location = new Point(338, 118);
+            tbxDelStu.Location = new Point(182, 55);
+            tbxDelStu.Margin = new Padding(2, 1, 2, 1);
             tbxDelStu.Name = "tbxDelStu";
-            tbxDelStu.Size = new Size(319, 39);
+            tbxDelStu.Size = new Size(174, 23);
             tbxDelStu.TabIndex = 2;
             // 
             // tbxDelMod
             // 
-            tbxDelMod.Location = new Point(338, 221);
+            tbxDelMod.Location = new Point(182, 104);
+            tbxDelMod.Margin = new Padding(2, 1, 2, 1);
             tbxDelMod.Name = "tbxDelMod";
-            tbxDelMod.Size = new Size(319, 39);
+            tbxDelMod.Size = new Size(174, 23);
             tbxDelMod.TabIndex = 3;
             // 
             // lblDelStuNum
             // 
             lblDelStuNum.AutoSize = true;
-            lblDelStuNum.Location = new Point(73, 121);
+            lblDelStuNum.Location = new Point(39, 57);
+            lblDelStuNum.Margin = new Padding(2, 0, 2, 0);
             lblDelStuNum.Name = "lblDelStuNum";
-            lblDelStuNum.Size = new Size(259, 32);
+            lblDelStuNum.Size = new Size(128, 15);
             lblDelStuNum.TabIndex = 4;
             lblDelStuNum.Text = "Enter Student Number:";
             // 
             // lblDelModCode
             // 
             lblDelModCode.AutoSize = true;
-            lblDelModCode.Location = new Point(73, 224);
+            lblDelModCode.Location = new Point(39, 105);
+            lblDelModCode.Margin = new Padding(2, 0, 2, 0);
             lblDelModCode.Name = "lblDelModCode";
-            lblDelModCode.Size = new Size(227, 32);
+            lblDelModCode.Size = new Size(112, 15);
             lblDelModCode.TabIndex = 5;
             lblDelModCode.Text = "Enter Module Code:";
             // 
+            // btnToMain
+            // 
+            btnToMain.Location = new Point(210, 147);
+            btnToMain.Name = "btnToMain";
+            btnToMain.Size = new Size(117, 23);
+            btnToMain.TabIndex = 6;
+            btnToMain.Text = "Exit to Main Form";
+            btnToMain.UseVisualStyleBackColor = true;
+            btnToMain.Click += btnToMain_Click;
+            // 
             // Delete
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(954, 350);
+            ClientSize = new Size(514, 182);
+            Controls.Add(btnToMain);
             Controls.Add(lblDelModCode);
             Controls.Add(lblDelStuNum);
             Controls.Add(tbxDelMod);
             Controls.Add(tbxDelStu);
             Controls.Add(btnDelMod);
             Controls.Add(btnDelStu);
+            Margin = new Padding(2, 1, 2, 1);
             Name = "Delete";
             Text = "Delete";
             ResumeLayout(false);
@@ -112,5 +132,6 @@
         private TextBox tbxDelMod;
         private Label lblDelStuNum;
         private Label lblDelModCode;
+        private Button btnToMain;
     }
 }

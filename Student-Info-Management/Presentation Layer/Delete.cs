@@ -31,5 +31,12 @@ namespace Student_Information_Management.Presentation_Layer
         {
             handler.deleteModule(int.Parse(tbxDelMod.Text));//calls a method and deletes module info on click
         }
+
+        private void btnToMain_Click(object sender, EventArgs e)
+        {
+            StudentModuleInfoForm mainform = new StudentModuleInfoForm();
+            ActiveForm.Hide();
+            mainform.Show();
+        }
     }
 }
