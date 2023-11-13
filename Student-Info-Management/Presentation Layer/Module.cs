@@ -41,7 +41,14 @@ namespace Student_Information_Management.Presentation_Layer
 
         private void Module_Load(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            moduleData = new ModuleData(int.Parse(txtModule.Text), txtModuleName.Text, txtModuleDesc.Text, txtModuleLinks.Text);
+            handler.UpdateModule(moduleData);
+            MessageBox.Show("Module Successfully Updated");
         }
     }
 }

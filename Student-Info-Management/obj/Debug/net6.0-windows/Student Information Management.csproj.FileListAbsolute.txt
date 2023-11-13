@@ -34,3 +34,31 @@ C:\Users\User\Source\Repos\Ashley-Vetter\Student-Info-Management\Student-Info-Ma
 C:\Users\User\Source\Repos\Ashley-Vetter\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.pdb
 C:\Users\User\Source\Repos\Ashley-Vetter\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.genruntimeconfig.cache
 C:\Users\User\Source\Repos\Ashley-Vetter\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\ref\Student Information Management.dll
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\bin\Debug\net6.0-windows\Student Information Management.exe
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\bin\Debug\net6.0-windows\Student Information Management.deps.json
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\bin\Debug\net6.0-windows\Student Information Management.runtimeconfig.json
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\bin\Debug\net6.0-windows\Student Information Management.dll
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\bin\Debug\net6.0-windows\Student Information Management.pdb
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.csproj.AssemblyReference.cache
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student_Information_Management.Presentation_Layer.Delete.resources
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student_Information_Management.Presentation_Layer.LoginForm.resources
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student_Information_Management.Presentation_Layer.Module.resources
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student_Information_Management.StudentModuleInfoForm.resources
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student_Information_Management.Properties.Resources.resources
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.csproj.GenerateResource.cache
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.AssemblyInfoInputs.cache
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.AssemblyInfo.cs
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.csproj.CoreCompileInputs.cache
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.csproj.CopyComplete
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.dll
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\refint\Student Information Management.dll
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.pdb
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.genruntimeconfig.cache
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\ref\Student Information Management.dll
