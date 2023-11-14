@@ -1,6 +1,4 @@
-﻿using Student_Information_Management.Data_Access_Layer;
-using Student_Information_Management.Data_Layer;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Student_Information_Management.Data_Access_Layer;
 
 
 namespace Student_Information_Management.Presentation_Layer

@@ -4,10 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using Microsoft.VisualBasic;
-using Student_Information_Management.Business_Logic_Layer;
-using Student_Information_Management.Data_Layer;
-using Student_Information_Management.Presentation_Layer;
 
 namespace Student_Information_Management.Data_Access_Layer
 {
@@ -17,8 +13,9 @@ namespace Student_Information_Management.Data_Access_Layer
         public void WriteSampleLogins()
         {
             // Create sample logins and write them to the file
-            string[] sampleLogins = { "Admin:admin", "Nthabi:nthabi123", "Frank:frank123", "Ashley:ashley123", "Simphiwe:simphiwe123", "Marcel:marcel123" };
+            string[] sampleLogins = { "Admin:admin", "NSeloana490:Nthabiseng#577490", "PSmal298:Peter#577298", "AVetter605:Ashley#577605", "SMathosa415:Simphiwe#577415", "MDeLange610:Marcel#577610" };
             File.WriteAllLines(path, sampleLogins);
         }
+
     }
 }
