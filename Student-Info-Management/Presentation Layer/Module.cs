@@ -12,14 +12,10 @@ namespace Student_Information_Management.Presentation_Layer
 {
     public partial class Module : Form
     {
-        DataHandler handler;
+        DataHandler handler=new DataHandler();
         ModuleData moduleData;
 
-        public int V { get; }
-        public string Text1 { get; }
-        public string Text2 { get; }
-        public string Text3 { get; }
-
+      
         public Module()
         {
             InitializeComponent();

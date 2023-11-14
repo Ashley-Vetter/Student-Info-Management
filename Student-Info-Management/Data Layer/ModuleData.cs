@@ -18,12 +18,12 @@ namespace Student_Information_Management.Data_Layer
             this.Modulecode = modulecode;
             this.ModuleName = moduleName;
             this.MdouleDescription = mdouleDescription;
-            this.Links = links;
+            this.Links = null;
         }
 
         public int Modulecode { get => modulecode; set => modulecode = value; }
         public string ModuleName { get => moduleName; set => moduleName = value; }
         public string MdouleDescription { get => mdouleDescription; set => mdouleDescription = value; }
-        public string Links { get => links; set => links = value; }
+        public string? Links { get => links; set => links = value; }
     }
 }

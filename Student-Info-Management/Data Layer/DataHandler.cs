@@ -18,7 +18,7 @@ namespace Student_Information_Management.Data_Layer
     {
         static string path = "SampleLogins.txt";
         //connection string to sql server
-        static string conn = "Server= ASHLEY\\SQLEXPRESS;Initial Catalog= StudentManager; Integrated Security=SSPI";
+        static string conn = "Server= localhost\\SQLEXPRESS;Initial Catalog= StudentManager; Integrated Security=SSPI";
         string query;
         SqlConnection connection = new SqlConnection(conn);
         SqlDataAdapter adapter;
@@ -114,7 +114,7 @@ namespace Student_Information_Management.Data_Layer
             query = $"UPDATE students " +
                             $"SET  studentNumber = '{student.StudNumber}', firstName = '{student.Firstname}', surname = '{student.Surname}', studentImage'{student.StudImage}', " +
                             $"dob = '{student.DateOfBirth}', gender = '{student.Gender}', phone = '{student.Phone}', stuAddress = '{student.StuAddress}', moduleCodes = '{student.ModuleCode}'" +
-                            $"WHERE studNumber = '{student.StudNumber}'";
+                            $"WHERE studentNumber = '{student.StudNumber}'";
 
             try
             {
