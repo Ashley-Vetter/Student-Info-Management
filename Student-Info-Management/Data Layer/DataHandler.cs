@@ -213,33 +213,33 @@ namespace Student_Information_Management.Data_Layer
         }
 
 
-        //public DataTable searchStudent(int studentNumber)
-        //{
-        //    query = $"SELECT * FROM students WHERE studentNumber = '{studentNumber}'";
-        //    adapter = new SqlDataAdapter(query, conn);
-        //    table = new DataTable();
-        //    adapter.Fill(table);
-        //    return table;
-        //}
-
-        //public DataTable searchModule(int moduleCode)
-        //{
-        //    query = $"SELECT * FROM modules WHERE moduleCode = '{moduleCode}'";
-        //    adapter = new SqlDataAdapter(query, conn);
-        //    table = new DataTable();
-        //    adapter.Fill(table);
-        //    return table;
-        //}
-        public DataTable SearchStudent(int studNumber, int moduleCode)
+        public DataTable searchStudent(int studentnumber)
         {
-            query = $"SELECT * FROM modules WHERE ModuleCode AND StudentNumber = '{moduleCode}', {studNumber} ";
+            query = $"select * from students where studentnumber = '{studentnumber}'";
             adapter = new SqlDataAdapter(query, conn);
             table = new DataTable();
             adapter.Fill(table);
-            MessageBox.Show("Search button clicked!");
             return table;
-            //Call this method in the StudentModuleInfo form to search for student using module code and student number 
         }
+
+        public DataTable searchModule(int moduleCode)
+        {
+            query = $"SELECT * FROM modules WHERE moduleCode = '{moduleCode}'";
+            adapter = new SqlDataAdapter(query, conn);
+            table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+        //public DataTable searchstudent(int studnumber, int modulecode)
+        //{
+        //    query = $"select * from modules where modulecode and studentnumber = '{modulecode}', {studnumber} ";
+        //    adapter = new SqlDataAdapter(query, conn);
+        //    table = new DataTable();
+        //    adapter.Fill(table);
+        //    MessageBox.Show("search button clicked!");
+        //    return table;
+        //    //call this method in the studentmoduleinfo form to search for student using module code and student number 
+        //}
 
         public void deleteModule(int moduleCode)//method that is used by a button that deletes a module entry
         {

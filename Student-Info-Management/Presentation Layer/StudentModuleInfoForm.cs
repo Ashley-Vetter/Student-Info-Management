@@ -83,7 +83,18 @@ namespace Student_Information_Management
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            this.dgvStudents.DataSource = null;
+            bsStudents.DataSource = null;
+            bsStudents.DataSource = handler.searchStudent(int.Parse(txtStudentNumberSearch.Text));
+            dgvStudents.DataSource = bsStudents;
+        }
 
+        private void btnSearchModule_Click(object sender, EventArgs e)
+        {
+            this.dgvModules.DataSource = null;
+            bsModules.DataSource = null;
+            bsModules.DataSource = handler.searchModule(int.Parse(txtModuleCodeSearch.Text));
+            dgvModules.DataSource = bsModules;
         }
 
 
