@@ -8,10 +8,8 @@ namespace Student_Information_Management.Business_Logic_Layer
 {
     internal class ModuleData
     {
-        int modulecode;
-        string moduleName;
-        string moduleDescription;
-        string links;
+        private int modulecode;
+        private string moduleName, moduleDescription, links;
 
         public ModuleData(int modulecode, string moduleName, string moduleDescription, string links)
         {
@@ -24,6 +22,6 @@ namespace Student_Information_Management.Business_Logic_Layer
         public int Modulecode { get => modulecode; set => modulecode = value; }
         public string ModuleName { get => moduleName; set => moduleName = value; }
         public string ModuleDescription { get => moduleDescription; set => moduleDescription = value; }
-        public string? Links { get => links; set => links = value; }
+        public string Links { get => links; set => links = value; }
     }
 }

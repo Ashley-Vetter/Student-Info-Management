@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Student-Info-Management",
-    "\\Student-Info-Management\\Data Layer"
+    "\\Student-Info-Management\\Business Logic Layer",
+    "\\Student-Info-Management\\Data Access Layer",
+    "\\Student-Info-Management\\Presentation Layer"
   ],
-  "SelectedNode": "\\Student-Info-Management\\Student Information Management.sln",
+  "SelectedNode": "\\Student-Info-Management\\Presentation Layer\\LoginForm.cs",
   "PreviewInSolutionExplorer": false
 }

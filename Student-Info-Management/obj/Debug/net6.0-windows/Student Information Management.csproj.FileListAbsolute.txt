@@ -54,7 +54,6 @@ C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\
 C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.AssemblyInfoInputs.cache
 C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.AssemblyInfo.cs
 C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.csproj.CoreCompileInputs.cache
-C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.csproj.CopyComplete
 C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.dll
 C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\refint\Student Information Management.dll
 C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.pdb
@@ -89,3 +88,6 @@ C:\Users\peter\OneDrive\Documents\GitHub\Student-Info-Management\Student-Info-Ma
 C:\Users\peter\OneDrive\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.genruntimeconfig.cache
 C:\Users\peter\OneDrive\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\ref\Student Information Management.dll
 C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student_Information_Management.Presentation_Layer.DeleteForm.resources
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student_Information_Management.Presentation_Layer.DeleteModule.resources
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student Information Management.sourcelink.json
+C:\Users\Aevet\Documents\GitHub\Student-Info-Management\Student-Info-Management\obj\Debug\net6.0-windows\Student .0C68AAAA.Up2Date

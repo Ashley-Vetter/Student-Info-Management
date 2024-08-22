@@ -128,32 +128,6 @@ namespace Student_Information_Management
             deleteForm.Show();
         }
 
-        //private void button1_Click_1(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        // Validate user input before parsing
-        //        if (int.TryParse(txtStudNum.Text, out int studentNumber) &&
-        //            int.TryParse(txtModulecode.Text, out int moduleCode))
-        //        {
-        //            //'dataHandler.SearchStudent' returns a DataTable
-        //            DataTable result = handler.SearchStudent(studentNumber, moduleCode);
-
-        //            // Display the result in a DataGridView (replace it with your actual logic)
-        //            dgvStudents.DataSource = result;
-        //        }
-        //        else
-        //        {
-        //            // return the case where the user input is not valid
-        //            MessageBox.Show("Please enter valid integers for Student Number and Module Code.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        // log the exception and inform the user
-        //        MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //}
     }
 }
 

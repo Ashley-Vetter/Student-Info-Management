@@ -76,10 +76,11 @@
             // 
             // btnSearchStudent
             // 
-            btnSearchStudent.Location = new Point(296, 341);
+            btnSearchStudent.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSearchStudent.Location = new Point(311, 387);
             btnSearchStudent.Margin = new Padding(2, 1, 2, 1);
             btnSearchStudent.Name = "btnSearchStudent";
-            btnSearchStudent.Size = new Size(119, 38);
+            btnSearchStudent.Size = new Size(156, 46);
             btnSearchStudent.TabIndex = 12;
             btnSearchStudent.Text = "Search Student";
             btnSearchStudent.UseVisualStyleBackColor = true;
@@ -90,9 +91,9 @@
             btnExit.BackColor = Color.AliceBlue;
             btnExit.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnExit.ForeColor = SystemColors.ControlText;
-            btnExit.Location = new Point(667, 474);
+            btnExit.Location = new Point(766, 553);
             btnExit.Name = "btnExit";
-            btnExit.Size = new Size(218, 50);
+            btnExit.Size = new Size(226, 50);
             btnExit.TabIndex = 22;
             btnExit.Text = "Exit Application";
             btnExit.UseVisualStyleBackColor = false;
@@ -100,10 +101,11 @@
             // 
             // btnSearchModule
             // 
-            btnSearchModule.Location = new Point(286, 379);
+            btnSearchModule.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSearchModule.Location = new Point(319, 364);
             btnSearchModule.Margin = new Padding(2, 1, 2, 1);
             btnSearchModule.Name = "btnSearchModule";
-            btnSearchModule.Size = new Size(129, 36);
+            btnSearchModule.Size = new Size(130, 53);
             btnSearchModule.TabIndex = 13;
             btnSearchModule.Text = "Search Module";
             btnSearchModule.UseVisualStyleBackColor = true;
@@ -117,7 +119,7 @@
             dgvStudents.Name = "dgvStudents";
             dgvStudents.RowHeadersWidth = 82;
             dgvStudents.RowTemplate.Height = 41;
-            dgvStudents.Size = new Size(422, 178);
+            dgvStudents.Size = new Size(491, 178);
             dgvStudents.TabIndex = 19;
             // 
             // dgvModules
@@ -128,7 +130,7 @@
             dgvModules.Name = "dgvModules";
             dgvModules.RowHeadersWidth = 82;
             dgvModules.RowTemplate.Height = 41;
-            dgvModules.Size = new Size(422, 178);
+            dgvModules.Size = new Size(457, 178);
             dgvModules.TabIndex = 23;
             // 
             // groupBox2
@@ -147,9 +149,9 @@
             groupBox2.Controls.Add(lblModuleDescription);
             groupBox2.Controls.Add(lblModuleName);
             groupBox2.Controls.Add(lblModuleCode);
-            groupBox2.Location = new Point(453, 12);
+            groupBox2.Location = new Point(522, 12);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(432, 456);
+            groupBox2.Size = new Size(467, 535);
             groupBox2.TabIndex = 28;
             groupBox2.TabStop = false;
             // 
@@ -166,9 +168,10 @@
             // 
             // btnUpdateModule
             // 
-            btnUpdateModule.Location = new Point(152, 379);
+            btnUpdateModule.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnUpdateModule.Location = new Point(174, 364);
             btnUpdateModule.Name = "btnUpdateModule";
-            btnUpdateModule.Size = new Size(129, 38);
+            btnUpdateModule.Size = new Size(130, 53);
             btnUpdateModule.TabIndex = 23;
             btnUpdateModule.Text = "Update Module";
             btnUpdateModule.UseVisualStyleBackColor = true;
@@ -176,9 +179,10 @@
             // 
             // btnAddModule
             // 
-            btnAddModule.Location = new Point(17, 379);
+            btnAddModule.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAddModule.Location = new Point(16, 364);
             btnAddModule.Name = "btnAddModule";
-            btnAddModule.Size = new Size(129, 38);
+            btnAddModule.Size = new Size(130, 53);
             btnAddModule.TabIndex = 22;
             btnAddModule.Text = "Add Module";
             btnAddModule.UseVisualStyleBackColor = true;
@@ -215,36 +219,40 @@
             // lblModuleLinks
             // 
             lblModuleLinks.AutoSize = true;
+            lblModuleLinks.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblModuleLinks.Location = new Point(16, 332);
             lblModuleLinks.Name = "lblModuleLinks";
-            lblModuleLinks.Size = new Size(78, 15);
+            lblModuleLinks.Size = new Size(85, 17);
             lblModuleLinks.TabIndex = 17;
             lblModuleLinks.Text = "Module Links";
             // 
             // lblModuleDescription
             // 
             lblModuleDescription.AutoSize = true;
+            lblModuleDescription.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblModuleDescription.Location = new Point(17, 301);
             lblModuleDescription.Name = "lblModuleDescription";
-            lblModuleDescription.Size = new Size(111, 15);
+            lblModuleDescription.Size = new Size(123, 17);
             lblModuleDescription.TabIndex = 16;
             lblModuleDescription.Text = "Module Description";
             // 
             // lblModuleName
             // 
             lblModuleName.AutoSize = true;
+            lblModuleName.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblModuleName.Location = new Point(16, 270);
             lblModuleName.Name = "lblModuleName";
-            lblModuleName.Size = new Size(83, 15);
+            lblModuleName.Size = new Size(92, 17);
             lblModuleName.TabIndex = 15;
             lblModuleName.Text = "Module Name";
             // 
             // lblModuleCode
             // 
             lblModuleCode.AutoSize = true;
+            lblModuleCode.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblModuleCode.Location = new Point(16, 239);
             lblModuleCode.Name = "lblModuleCode";
-            lblModuleCode.Size = new Size(79, 15);
+            lblModuleCode.Size = new Size(88, 17);
             lblModuleCode.TabIndex = 14;
             lblModuleCode.Text = "Module Code";
             // 
@@ -276,16 +284,17 @@
             groupBox3.Controls.Add(dgvStudents);
             groupBox3.Location = new Point(12, 12);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(435, 507);
+            groupBox3.Size = new Size(504, 591);
             groupBox3.TabIndex = 29;
             groupBox3.TabStop = false;
             // 
             // btnAddStudent
             // 
-            btnAddStudent.Location = new Point(296, 246);
+            btnAddStudent.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnAddStudent.Location = new Point(311, 251);
             btnAddStudent.Margin = new Padding(2, 1, 2, 1);
             btnAddStudent.Name = "btnAddStudent";
-            btnAddStudent.Size = new Size(117, 38);
+            btnAddStudent.Size = new Size(156, 46);
             btnAddStudent.TabIndex = 48;
             btnAddStudent.Text = "Add Student";
             btnAddStudent.UseVisualStyleBackColor = true;
@@ -293,10 +302,11 @@
             // 
             // btnUpdateStudent
             // 
-            btnUpdateStudent.Location = new Point(296, 294);
+            btnUpdateStudent.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnUpdateStudent.Location = new Point(311, 316);
             btnUpdateStudent.Margin = new Padding(2, 1, 2, 1);
             btnUpdateStudent.Name = "btnUpdateStudent";
-            btnUpdateStudent.Size = new Size(119, 38);
+            btnUpdateStudent.Size = new Size(156, 46);
             btnUpdateStudent.TabIndex = 49;
             btnUpdateStudent.Text = " Update Student";
             btnUpdateStudent.UseVisualStyleBackColor = true;
@@ -305,23 +315,24 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label3.Location = new Point(20, 239);
             label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(95, 15);
+            label3.Size = new Size(104, 17);
             label3.TabIndex = 30;
             label3.Text = "Student Number";
             // 
             // txtStudentModuleCode
             // 
-            txtStudentModuleCode.Location = new Point(128, 467);
+            txtStudentModuleCode.Location = new Point(127, 538);
             txtStudentModuleCode.Name = "txtStudentModuleCode";
             txtStudentModuleCode.Size = new Size(148, 23);
             txtStudentModuleCode.TabIndex = 47;
             // 
             // txtFirstName
             // 
-            txtFirstName.Location = new Point(128, 266);
+            txtFirstName.Location = new Point(128, 274);
             txtFirstName.Margin = new Padding(2, 1, 2, 1);
             txtFirstName.Name = "txtFirstName";
             txtFirstName.Size = new Size(148, 23);
@@ -330,15 +341,16 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(20, 470);
+            label11.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(19, 541);
             label11.Name = "label11";
-            label11.Size = new Size(79, 15);
+            label11.Size = new Size(88, 17);
             label11.TabIndex = 46;
             label11.Text = "Module Code";
             // 
             // txtSurname
             // 
-            txtSurname.Location = new Point(128, 294);
+            txtSurname.Location = new Point(128, 314);
             txtSurname.Margin = new Padding(2, 1, 2, 1);
             txtSurname.Name = "txtSurname";
             txtSurname.Size = new Size(148, 23);
@@ -346,7 +358,7 @@
             // 
             // txtPhone
             // 
-            txtPhone.Location = new Point(128, 404);
+            txtPhone.Location = new Point(127, 464);
             txtPhone.Name = "txtPhone";
             txtPhone.Size = new Size(148, 23);
             txtPhone.TabIndex = 45;
@@ -362,15 +374,16 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(20, 407);
+            label10.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Location = new Point(20, 467);
             label10.Name = "label10";
-            label10.Size = new Size(41, 15);
+            label10.Size = new Size(44, 17);
             label10.TabIndex = 44;
             label10.Text = "Phone";
             // 
             // txtStreetaddress
             // 
-            txtStreetaddress.Location = new Point(128, 436);
+            txtStreetaddress.Location = new Point(128, 502);
             txtStreetaddress.Margin = new Padding(2, 1, 2, 1);
             txtStreetaddress.Name = "txtStreetaddress";
             txtStreetaddress.Size = new Size(148, 23);
@@ -378,7 +391,7 @@
             // 
             // txtDOB
             // 
-            txtDOB.Location = new Point(128, 350);
+            txtDOB.Location = new Point(127, 387);
             txtDOB.Name = "txtDOB";
             txtDOB.Size = new Size(148, 23);
             txtDOB.TabIndex = 43;
@@ -386,25 +399,27 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(20, 353);
+            label9.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label9.Location = new Point(19, 390);
             label9.Name = "label9";
-            label9.Size = new Size(75, 15);
+            label9.Size = new Size(83, 17);
             label9.TabIndex = 42;
             label9.Text = "Date Of Birth";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(20, 439);
+            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(20, 505);
             label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Size = new Size(82, 15);
+            label6.Size = new Size(94, 17);
             label6.TabIndex = 33;
             label6.Text = "Street Address";
             // 
             // txtGender
             // 
-            txtGender.Location = new Point(128, 376);
+            txtGender.Location = new Point(127, 426);
             txtGender.Name = "txtGender";
             txtGender.Size = new Size(148, 23);
             txtGender.TabIndex = 41;
@@ -412,25 +427,27 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(21, 379);
+            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(20, 429);
             label8.Name = "label8";
-            label8.Size = new Size(45, 15);
+            label8.Size = new Size(51, 17);
             label8.TabIndex = 40;
             label8.Text = "Gender";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(20, 297);
+            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(20, 317);
             label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(54, 15);
+            label5.Size = new Size(59, 17);
             label5.TabIndex = 32;
             label5.Text = "Surname";
             // 
             // txtImage
             // 
-            txtImage.Location = new Point(128, 323);
+            txtImage.Location = new Point(127, 350);
             txtImage.Name = "txtImage";
             txtImage.Size = new Size(148, 23);
             txtImage.TabIndex = 39;
@@ -438,19 +455,21 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(20, 326);
+            label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(19, 353);
             label7.Name = "label7";
-            label7.Size = new Size(65, 15);
+            label7.Size = new Size(70, 17);
             label7.TabIndex = 38;
             label7.Text = "Image Link";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(20, 269);
+            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(20, 277);
             label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(64, 15);
+            label4.Size = new Size(71, 17);
             label4.TabIndex = 31;
             label4.Text = "First Name";
             // 
@@ -459,7 +478,7 @@
             lblStudentFormHeading.AutoSize = true;
             lblStudentFormHeading.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
             lblStudentFormHeading.ForeColor = Color.DarkSlateGray;
-            lblStudentFormHeading.Location = new Point(151, 13);
+            lblStudentFormHeading.Location = new Point(181, 13);
             lblStudentFormHeading.Name = "lblStudentFormHeading";
             lblStudentFormHeading.Size = new Size(151, 30);
             lblStudentFormHeading.TabIndex = 29;
@@ -470,9 +489,9 @@
             btnDeleteForm.BackColor = Color.AliceBlue;
             btnDeleteForm.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnDeleteForm.ForeColor = SystemColors.ControlText;
-            btnDeleteForm.Location = new Point(453, 474);
+            btnDeleteForm.Location = new Point(522, 553);
             btnDeleteForm.Name = "btnDeleteForm";
-            btnDeleteForm.Size = new Size(208, 50);
+            btnDeleteForm.Size = new Size(226, 50);
             btnDeleteForm.TabIndex = 30;
             btnDeleteForm.Text = "Delete Form";
             btnDeleteForm.UseVisualStyleBackColor = false;
@@ -483,7 +502,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlDark;
-            ClientSize = new Size(897, 530);
+            ClientSize = new Size(1001, 615);
             Controls.Add(btnDeleteForm);
             Controls.Add(btnExit);
             Controls.Add(groupBox3);

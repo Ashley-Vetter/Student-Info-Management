@@ -16,7 +16,7 @@ namespace Student_Information_Management.Data_Access_Layer
     {
         static string path = "SampleLogins.txt";
         //connection string to sql server
-        static string conn = "Server= (local);Initial Catalog= StudentManager; Integrated Security=SSPI";
+        static string conn = "Server= HALSEY\\SQLEXPRESS;Initial Catalog= StudentManager; Integrated Security=SSPI";
         private string query;
         SqlConnection connection = new SqlConnection(conn);
         SqlDataAdapter adapter;
